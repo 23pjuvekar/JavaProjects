@@ -36,11 +36,18 @@ public class Main {
             } else if (num2 < num1){
                 count = num2;
                 maxNum = num1;
+            } else if (num1 == num2){
+                maxNum = num1;
+                count = num1;
             }
 
             while (count <= maxNum){
-                System.out.println("Square of " + count + " is " + Math.pow(count, 2));
-                System.out.println("Cube of " + count + " is " + Math.pow(count, 3));
+
+                //System.out.println("Square of " + count + " is " + Math.pow(count, 2));
+                //System.out.println("Cube of " + count + " is " + Math.pow(count, 3));
+
+                System.out.println(Math.pow(count, 2));
+                System.out.println(Math.pow(count, 3));
                 count ++;
             }
 

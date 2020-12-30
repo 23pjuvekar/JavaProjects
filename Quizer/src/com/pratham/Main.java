@@ -1,5 +1,6 @@
 package com.pratham;
 import javax.swing.*;
+import java.awt.*;
 
 public class Main extends Interface {
 
@@ -14,9 +15,18 @@ public class Main extends Interface {
         // Creates new JFrame Window
         object.createFrame();
 
-        // Creates Main header label
-        object.createButton("Login", 0, 10, 10, 10 );
-        object.createButton("New",0,0,5,5);
+        // Creates Login Button
+        object.createButton("Login",500,450,100,300);
+
+        //Creates Login Entering Textbook
+        object.createLabel("Enter Username:", 500, 350, 30,150);
+        object.createLabel("Enter Password:", 500,400,30,150);
+        object.createDisplay("", 600, 350, 30,200);
+        object.createDisplay("", 600, 400, 30,200);
+
+
+
+
 
 
     }
